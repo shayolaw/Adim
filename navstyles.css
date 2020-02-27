@@ -1,0 +1,278 @@
+body {
+  font-family: Montserrat;
+  margin: 0;
+  width: 100vw;
+  overflow-x: hidden; }
+
+.social-nav {
+  padding: 0;
+  position: absolute;
+  top: 0px;
+  left: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 160px; }
+  .social-nav li {
+    list-style: none;
+    color: black; }
+    .social-nav li a {
+      text-decoration: none;
+      color: black; }
+
+.Navbar {
+  width: 90vw;
+  margin: 0px auto; }
+  .Navbar nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px; }
+    .Navbar nav .menu {
+      display: none; }
+    .Navbar nav img {
+      height: 40px;
+      width: 100px; }
+  .Navbar ul {
+    width: 30vw;
+    display: flex;
+    justify-content: space-between; }
+    .Navbar ul a {
+      text-decoration: none;
+      color: black;
+      font-size: 14px;
+      font-weight: 700; }
+      .Navbar ul a li {
+        list-style: none; }
+    .Navbar ul .active {
+      color: #DC6242; }
+
+.footer {
+  width: 100vw;
+  height: 200px;
+  background-color: black;
+  color: white;
+  display: flex; }
+
+footer {
+  display: flex;
+  width: 90vw;
+  margin: 0 auto;
+  align-items: center; }
+  footer ul {
+    padding: 0; }
+  footer .creator {
+    width: 200px; }
+  footer .footer-nav {
+    width: 200px;
+    padding: 0; }
+    footer .footer-nav li {
+      list-style: none; }
+    footer .footer-nav a {
+      font-size: 12px;
+      color: white;
+      text-decoration: none; }
+  footer .footer-social-nav {
+    width: 200px;
+    padding: 0; }
+    footer .footer-social-nav li {
+      list-style: none; }
+    footer .footer-social-nav a {
+      font-size: 14px;
+      color: white;
+      text-decoration: none; }
+      footer .footer-social-nav a i {
+        margin-right: 20px; }
+  footer form input {
+    width: 75%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 0px; }
+  footer form button {
+    background-color: white;
+    color: black;
+    padding: 12px 20px;
+    margin-left: 10px;
+    border: none;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer; }
+  footer .address {
+    width: 300px;
+    font-size: 14px;
+    line-height: 200%; }
+    footer .address li {
+      list-style: none; }
+
+@media only screen and (max-width: 991px) {
+  .Navbar {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    background-color: black; }
+    .Navbar nav {
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      height: 55px; }
+      .Navbar nav .menu {
+        background-color: black;
+        width: 80vw;
+        margin: 15px auto;
+        height: 30px;
+        color: white;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center; }
+        .Navbar nav .menu .title {
+          font-size: 1.5em;
+          font-weight: bold; }
+        .Navbar nav .menu .burgers {
+          display: flex;
+          flex-direction: column;
+          transform: rotateY(180deg); }
+          .Navbar nav .menu .burgers #burger-1 {
+            width: 25px;
+            border-radius: 5px;
+            height: 2px;
+            background-color: white; }
+          .Navbar nav .menu .burgers #burger-2 {
+            margin: 3px 0;
+            width: 20px;
+            border-radius: 5px;
+            height: 2px;
+            background-color: white; }
+          .Navbar nav .menu .burgers #burger-3 {
+            width: 15px;
+            border-radius: 5px;
+            height: 2px;
+            background-color: white; }
+      .Navbar nav img {
+        display: none; }
+    .Navbar ul {
+      width: 80vw;
+      height: 150px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+      .Navbar ul a {
+        text-decoration: none;
+        color: white;
+        font-size: 14px;
+        font-weight: 500; }
+        .Navbar ul a li {
+          list-style: none;
+          text-align: left;
+          padding: 15px 0; }
+      .Navbar ul .active {
+        color: white; }
+
+  .social-nav {
+    opacity: 0;
+    top: 240px;
+    left: 15vw;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    width: 50vw;
+    justify-content: space-between; }
+    .social-nav li {
+      color: white; }
+      .social-nav li a {
+        color: white; }
+
+  .hero {
+    width: 90vw;
+    padding-left: 0; }
+
+  .posts .card {
+    width: 28vw; }
+    .posts .card p {
+      height: 128px; }
+    .posts .card img {
+      width: 28vw; } }
+@media screen and (max-width: 768px) {
+  .Navbar {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    background-color: black; }
+    .Navbar nav {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      height: 55px;
+      overflow: hidden; }
+      .Navbar nav .menu {
+        background-color: black;
+        width: 80vw;
+        margin: 15px auto;
+        height: 30px;
+        color: white;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center; }
+        .Navbar nav .menu .title {
+          font-size: 1.5em;
+          font-weight: bold; }
+        .Navbar nav .menu .burgers {
+          display: flex;
+          flex-direction: column;
+          transform: rotateY(180deg); }
+          .Navbar nav .menu .burgers #burger-1 {
+            width: 25px;
+            border-radius: 5px;
+            height: 2px;
+            background-color: white; }
+          .Navbar nav .menu .burgers #burger-2 {
+            margin: 3px 0;
+            width: 20px;
+            border-radius: 5px;
+            height: 2px;
+            background-color: white; }
+          .Navbar nav .menu .burgers #burger-3 {
+            width: 15px;
+            border-radius: 5px;
+            height: 2px;
+            background-color: white; }
+      .Navbar nav img {
+        display: none; }
+    .Navbar ul {
+      width: 80vw;
+      height: 150px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+      .Navbar ul a {
+        text-decoration: none;
+        color: white;
+        font-size: 14px;
+        font-weight: 500; }
+        .Navbar ul a li {
+          list-style: none;
+          text-align: left;
+          padding: 15px 0; }
+      .Navbar ul .active {
+        color: white; }
+
+  .social-nav {
+    opacity: 0;
+    top: 240px;
+    left: 15vw;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    width: 50vw;
+    justify-content: space-between; }
+    .social-nav li {
+      color: white; }
+      .social-nav li a {
+        color: white; } }
+
+/*# sourceMappingURL=navstyles.css.map */

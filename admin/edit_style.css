@@ -1,0 +1,54 @@
+body {
+  margin: 0; }
+
+.background {
+  z-index: -1;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("Images/Image1.jpg");
+  background-size: cover;
+  background-position: center;
+  position: fixed;
+  top: 0; }
+
+.field {
+  font-family: Montserrat;
+  width: 50%;
+  padding: 50px;
+  background-color: white;
+  margin: 50px auto; }
+  .field form small {
+    color: red; }
+  .field form input {
+    margin-bottom: 30px; }
+  .field form .image_lg, .field form .image_sm {
+    background-color: #F1F1F1;
+    margin-bottom: 30px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .field form .image_lg input, .field form .image_sm input {
+      width: 0.1px;
+      height: 0.1px;
+      opacity: 0;
+      overflow: hidden;
+      position: absolute;
+      z-index: -1; }
+    .field form .image_lg label, .field form .image_sm label {
+      cursor: pointer;
+      text-align: center;
+      font-size: 0.7em; }
+  .field form .image_sm {
+    width: 200px; }
+    .field form .image_sm img {
+      width: 30px;
+      height: 30px; }
+    .field form .image_sm label {
+      font-size: 0.5em;
+      text-align: center; }
+  .field form .form-row {
+    margin-top: 30px;
+    width: 15vw; }
+
+/*# sourceMappingURL=edit_style.css.map */

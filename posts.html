@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Adim</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://unpkg.com/react@16/umd/react.production.min.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" crossorigin>
+</script>
+<link rel="stylesheet" type="text/css" href="/postsstyle.css">
+<link rel="stylesheet" type="text/css" href="/navstyles.css">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="root">
+	
+</div>
+</body>
+<script type="text/javascript" src="/postscript.js"></script>
+<script type="text/javascript">
+	var val = [45,0,500];
+	var alte = [500,1,5500];
+	$('.burgers').on('click',function(){
+		var current = alte;
+		alte=val;
+		val = current;
+		$('.social-nav').animate({
+								opacity:val[1]
+							},val[2])
+		$('nav').animate({
+						height:val[0]+"px"},3000)
+							})	
+</script>
+</html>

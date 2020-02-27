@@ -1,0 +1,130 @@
+body {
+  background-color: #f7f7f7; }
+
+.Navbar {
+  color: white; }
+  .Navbar nav a {
+    color: white; }
+
+.social-nav li a {
+  color: white; }
+
+.hero {
+  width: 100vw;
+  height: 400px;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white; }
+  .hero h3 {
+    width: 75vw;
+    color: white;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center; }
+  .hero p {
+    font-size: 12px;
+    word-spacing: 20px; }
+
+.container {
+  margin-top: 300px; }
+
+.article {
+  background-color: white;
+  padding: 50px;
+  width: 70vw;
+  margin: 100px auto; }
+  .article p {
+    margin: 0 auto;
+    width: 65vw;
+    font-size: 15px;
+    line-height: 200%;
+    color: gray; }
+
+.comment {
+  width: 70vw;
+  margin: 0 auto; }
+  .comment h4 {
+    font-size: 1.5em;
+    margin-bottom: 50px; }
+  .comment form {
+    display: flex;
+    flex-direction: column; }
+    .comment form label {
+      font-weight: 600; }
+    .comment form input, .comment form textarea {
+      width: 40%;
+      padding: 12px 20px;
+      margin: 8px 0 30px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box; }
+    .comment form textarea {
+      width: 100%; }
+    .comment form button {
+      width: 20%;
+      font-size: 15px;
+      font-weight: bold;
+      background-color: #4CAF50;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer; }
+
+#message {
+  background-color: white;
+  padding: 10px;
+  margin: 100px 0 0 0; }
+  #message #comments {
+    width: 70vw;
+    margin: 100px auto;
+    display: grid;
+    grid-template-areas: "dp name time" "dp message message";
+    text-align: left; }
+    #message #comments img {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      grid-area: dp; }
+    #message #comments h5 {
+      margin: 0;
+      grid-area: name;
+      grid-column-start: 1;
+      margin-left: 50px; }
+    #message #comments em {
+      font-size: 12px;
+      grid-area: time; }
+    #message #comments p {
+      grid-area: message;
+      font-size: 14px;
+      grid-column-start: 1;
+      margin-left: 50px; }
+  #message h6 {
+    font-size: 18px;
+    font-weight: bold;
+    word-spacing: 5px;
+    cursor: pointer; }
+
+@media screen and (max-width: 800px) {
+  .article p {
+    font-size: 12px; }
+
+  .comment {
+    width: 90vw; }
+    .comment form input, .comment form textarea {
+      width: 100%; }
+    .comment form textarea {
+      width: 100%; }
+    .comment form button {
+      width: 40vw; }
+
+  #comments p {
+    font-size: 12px; } }
+
+/*# sourceMappingURL=poststyle.css.map */

@@ -1,0 +1,162 @@
+$orange:#DC6242;
+$gray:#B4B4B4;
+.Navbar{
+	color:white;
+	nav{
+	a{
+		color:white;
+	}
+	}
+}
+.hero{
+	z-index: -1;
+	position: absolute;
+	top:0;
+	width:95vw;
+	margin-left:5vw;
+	height:100vh;
+	display: flex;
+	justify-content: flex-end;
+	align-items:center;
+	img{
+		width:55vw;
+		height:100vh;
+		margin-left: -200px;
+		z-index: -1;
+	}
+	h2{
+		font-size: 60px;
+		font-weight: 500;
+		width:60vw;
+		letter-spacing: 10px;
+		word-spacing: 20px;
+		.orange{
+			color: $orange;
+		}
+	}
+}
+.bio{
+	margin: 0 auto;
+	margin-top: 120vh;
+	margin-bottom: 10vh;
+	width:90vw;
+	h2{
+		font-weight: bold;
+		font-size: 30px;
+		margin-bottom: 30px;
+	}
+	p{
+		font-size: 14px;
+		line-height: 200%;
+		color:gray;
+	}
+}
+.decor{
+	width:45vw;
+	height:400px;
+	background-color: $orange;
+	opacity: 0.1;
+}
+
+@media screen and (max-width: 1200px) {
+	body{
+		width:100vw;
+		margin:0;
+		padding:0;
+		overflow-x: hidden;
+		
+	}
+	.Navbar{
+			nav{
+				ul{
+					a{
+						color:black;
+					}
+				}
+			}
+		}
+
+	.hero{
+		flex-direction: column;
+		top:45px;
+		left:0;
+		width:100vw;
+		margin-left: 0px;
+		padding:0;
+		height:500px;
+		justify-content: flex-start;
+		img{
+			border-radius:50%;
+			margin: 0;
+			height:300px;
+			width:300px;
+		}
+		h2{
+		
+			text-align: center;
+			width:80vw;
+			letter-spacing: 2px;
+			word-spacing: 0px;
+			margin:50px auto;
+			font-size: 1.4em;
+			font-weight: bold;
+		}
+	}
+	.bio{
+		margin-top: 550px;
+		p{
+			font-size: 12px;
+		}
+	}
+}
+
+
+@media screen and (max-width: 768px) {
+	body{
+		width:100vw;
+		margin:0;
+		padding:0;
+		overflow-x: hidden;
+	}
+	.Navbar{
+			nav{
+				ul{
+					a{
+						color:white;
+					}
+				}
+			}
+		}
+	.hero{
+		flex-direction: column;
+		top:45px;
+		left:0;
+		width:100vw;
+		margin-left: 0px;
+		padding:0;
+		height:500px;
+		justify-content: flex-start;
+		img{
+			border-radius:50%;
+			margin: 0;
+			height:300px;
+			width:300px;
+		}
+		h2{
+		
+			text-align: center;
+			width:80vw;
+			letter-spacing: 2px;
+			word-spacing: 0px;
+			margin:50px auto;
+			font-size: 1.4em;
+			font-weight: bold;
+		}
+	}
+	.bio{
+		margin-top: 550px;
+		p{
+			font-size: 12px;
+		}
+	}
+}
