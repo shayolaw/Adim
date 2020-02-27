@@ -1,0 +1,2 @@
+# Adim
+A Blog
